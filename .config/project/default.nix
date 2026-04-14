@@ -167,10 +167,13 @@
     ## must specify `yaya-0.5.1.0`, not `yaya-0.5.0.0`.
     extraDependencyVersions = [
       "QuickCheck-2.15.0.1" # Used by Nixpkgs 25.11’s haskellPackages
+      "QuickCheck-2.17.1" # maybe it’s used by the Windows builds (https://matrix.to/#/!BVsXIiTrEUYWfAwsQm:matrix.org/$PbFceooILRYGIZPYiCkeYqJ_B_bGKQ7RFiasqK4t7_g?via=matrix.org)
       "yaya-0.5.1.0"
       "yaya-0.6.0.0"
+      "yaya-0.7.0.0"
       "yaya-hedgehog-0.2.1.0"
       "yaya-hedgehog-0.3.0.0"
+      "yaya-unsafe-0.5.0.0"
     ];
     latestGhcVersion = "9.10.1";
   };

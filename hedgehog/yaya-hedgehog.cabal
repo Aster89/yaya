@@ -3,7 +3,7 @@ cabal-version: 3.0
 --   exception.
 
 name: yaya-hedgehog
-version: 0.4.0.0
+version: 0.4.0.1
 synopsis: Hedgehog testing support for the Yaya recursion scheme library.
 description: If you use Yaya in your own code and have tests written
              using Hedgehog, then this library will help you with
@@ -214,7 +214,7 @@ library
   build-depends:
     deriving-compat ^>= {0.5.9, 0.6},
     hedgehog ^>= {1.0.1, 1.1, 1.2, 1.4, 1.5, 1.7},
-    yaya ^>= {0.5.1, 0.6.0, 0.7.0},
+    yaya ^>= {0.5.1, 0.6.0, 0.7.0, 1.0.0},
   exposed-modules:
     Yaya.Hedgehog
     Yaya.Hedgehog.Expr
@@ -267,7 +267,7 @@ test-suite yaya
   build-depends:
     deriving-compat ^>= {0.5.9, 0.6},
     hedgehog ^>= {1.0.1, 1.1, 1.2, 1.4, 1.5, 1.7},
-    yaya ^>= {0.5.1, 0.6.0, 0.7.0},
+    yaya ^>= {0.5.1, 0.6.0, 0.7.0, 1.0.0},
     yaya-hedgehog,
   ghc-options:
     -rtsopts
