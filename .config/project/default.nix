@@ -173,6 +173,7 @@
       "yaya-0.7.0.0"
       "yaya-hedgehog-0.2.1.0"
       "yaya-hedgehog-0.3.0.0"
+      "yaya-hedgehog-0.4.0.0"
       "yaya-unsafe-0.5.0.0"
     ];
     latestGhcVersion = "9.10.1";
