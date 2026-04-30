@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog 1.1](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to the [Haskell Package Versioning Policy](https://pvp.haskell.org/).
 
+## [1.0.0.0] - 2026-04-22
+
+### Removed
+
+- dependency on `lens`
+- all optics-related bits (`AlgebraPrism`, `BialgebraIso`, etc.) – most are now available in the `yaya-lens` package
+- constructors and fields for fixed-points (`Mu`, `Nu`, `Fix`, `unFix`, `Cofix`, and `unCofix`)
+
+### Changed
+
+- generalized type of `distEnvT`
+
+### Added
+
+- `Embed` and `Project` patterns for exhaustive nested matching on recursive types
+- `distCofreeT`, `seqFreeF`, `seqFreeT`, and `futu` are now safe and correspondingly moved here from `yaya-unsafe`
+- `isNeither` helper for `XNor`
+- `qualifiedRules` for retrofitting without mangling names
+
 ## [0.7.0.0] - 2026-01-18
 
 ### Added
@@ -160,10 +179,11 @@ Unknown changes.
 
 - everything (this is the initial release)
 
-[0.7.0.0]: https://github.com/sellout/no-recursion/compare/v3.2.3...v4.0.0
-[0.6.2.3]: https://github.com/sellout/no-recursion/compare/v3.2.1...v3.2.3
-[0.6.2.2]: https://github.com/sellout/no-recursion/compare/v3.2.0...v3.2.1
-[0.6.2.0]: https://github.com/sellout/no-recursion/compare/v3.1.0...v3.2.0
-[0.6.1.0]: https://github.com/sellout/no-recursion/compare/v3.0.0...v3.1.0
-[0.6.0.0]: https://github.com/sellout/no-recursion/compare/v1.0.0...v3.0.0
+[1.0.0.0]: https://github.com/sellout/yaya/compare/v4.0.0...v5.0.0
+[0.7.0.0]: https://github.com/sellout/yaya/compare/v3.2.3...v4.0.0
+[0.6.2.3]: https://github.com/sellout/yaya/compare/v3.2.1...v3.2.3
+[0.6.2.2]: https://github.com/sellout/yaya/compare/v3.2.0...v3.2.1
+[0.6.2.0]: https://github.com/sellout/yaya/compare/v3.1.0...v3.2.0
+[0.6.1.0]: https://github.com/sellout/yaya/compare/v3.0.0...v3.1.0
+[0.6.0.0]: https://github.com/sellout/yaya/compare/v1.0.0...v3.0.0
 [0.5.2.1]: https://github.com/sellout/yaya/releases/tag/v1.0.0

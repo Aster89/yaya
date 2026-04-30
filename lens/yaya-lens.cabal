@@ -53,7 +53,7 @@ source-repository this
   location: https://github.com/sellout/yaya.git
   subdir: lens
   -- NB: This is the repo version, which is distinct from the package version.
-  tag: v4.0.0
+  tag: v5.0.0
 
 custom-setup
   setup-depends:
@@ -215,7 +215,7 @@ library
     src
   build-depends:
     lens ^>= {5, 5.1, 5.2, 5.3},
-    yaya ^>= {0.5.1, 0.6.0, 0.7.0},
+    yaya ^>= {0.5.1, 0.6.0, 0.7.0, 1.0.0},
   exposed-modules:
     Yaya.Lens
 
