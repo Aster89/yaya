@@ -55,7 +55,7 @@ source-repository this
   location: https://github.com/sellout/yaya.git
   subdir: unsafe
   -- NB: This is the repo version, which is distinct from the package version.
-  tag: v4.0.0
+  tag: v5.0.0
 
 custom-setup
   setup-depends:
